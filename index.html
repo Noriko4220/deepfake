@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepfake</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Deepfake Tool</h1>
+        <form>
+            <input type="file" id="video" accept="video/*">
+            <input type="file" id="image" accept="image/*">
+            <button type="button" onclick="runModel()">Run Model</button>
+        </form>
+
+        <div id="loading">Processing, please wait...</div>
+
+        <div id="results">
+            <h2>Results</h2>
+            <div id="videoContainer" class="video-container">
+                <video id="originalVideo" controls>
+                    Your browser does not support the video tag.
+                </video>
+                <video id="processedVideo" controls>
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="controls">
+                <button onclick="showOriginal()">Show Original</button>
+                <button onclick="showProcessed()">Show Processed</button>
+                <button onclick="showBoth()">Show Both</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
