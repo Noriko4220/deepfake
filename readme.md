@@ -2,23 +2,20 @@ Project Documentation
 
 Project Structure
 The project is organized as follows:
-face-swap/
-│
-├── backend/
-│   ├── uploads/                # Folder where uploaded files (video, image) are stored
-│   ├── processed/              # Folder where downloaded processed video (swapped.mp4) is stored
-│   ├── server.py               # Flask server for handling API endpoints
-│   ├── google_drive_helper.py  # Google Drive API helper functions
-│
-├── frontend/
-│   ├── index.html              # HTML structure for the frontend
-│   ├── app.js                  # JavaScript file for frontend logic
-│   ├── style.css               # Styling for the frontend UI
-│
-├── credentials/
-│   ├── deepfake-xxxxxx.json    # Google Drive API service account credentials
-│
-└── project_documentation.md    # Project documentation file
+face-swap
+- backend/
+-- uploads/                # Folder where uploaded files (video, image) are stored
+-- processed/              # Folder where downloaded processed video (swapped.mp4) is stored
+-- server.py               # Flask server for handling API endpoints
+-- google_drive_helper.py  # Google Drive API helper functions
+- frontend/
+-- index.html              # HTML structure for the frontend
+-- app.js                  # JavaScript file for frontend logic
+-- style.css               # Styling for the frontend UI
+- credentials/
+-- creds.json    # Google Drive API service account credentials
+- readme.md    # Project documentation file
+
 1. server.py - Flask Backend
 The server.py is the main backend file. It provides API endpoints to upload files, check processing status, and download processed files.
 
